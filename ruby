@@ -1,5 +1,5 @@
 echo "Installing Ruby 1.9.2 stable and making it the default Ruby ..."
-  rvm install 1.9.2-p290
+  CC=/usr/bin/gcc-4.2 rvm install 1.9.2-p290 --enable-shared
   rvm use 1.9.2 --default
 
 echo "Installing Rails to write and run web applications ..."
